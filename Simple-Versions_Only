@@ -19,7 +19,7 @@ if [[ $PiRevision == "a01041" ]] || [[ $PiRevision == "a21041" ]] || [[ $PiRevis
   echo "You're running on a Pi 2 Model B"
 fi
 if [[ $PiRevision == "900092" ]] || [[ $PiRevision == "900093" ]]; then
-  echo "You're running on a Pi Zero
+  echo "You're running on a Pi Zero"
 fi
 if [[ $PiRevision == "9000C1" ]]; then
   echo "You're running on a Pi Zero W"
@@ -40,10 +40,10 @@ if [[ $PiRevision == "c03111" ]] || [[ $PiRevision == "c03112" ]] || [[ $PiRevis
   echo "You're running on a Pi 4 4GB"
 fi
 if [[ $PiRevision == "d03114" ]]; then
-  echo "You're running on a Pi 4 8GB Rev 1.4"
+  echo "You're running on a Pi 4 8GB"
 fi
 if [[ $PiRevision == "c03130" ]]; then
-  echo "You're running on a Pi 400 4GB Rev 1.0"
+  echo "You're running on a Pi 400 4GB"
 fi
 if [[ $PiRevision == "902120" ]]; then
   echo "You're running on a Pi Zero 2 W 1GB Rev 1.0"

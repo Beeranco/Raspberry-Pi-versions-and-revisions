@@ -1,4 +1,19 @@
+PiRevision=`grep "Revision" /proc/cpuinfo` && PiRevision=$(echo $PiRevision | cut -f 2 -d ':' | cut -d' ' -f2,3)
 
+if [[ $PiRevision == "0002" ]]; then
+  echo "You're running on a Pi Model B Rev 1"
+fi
+if [[ $PiRevision == "0004" ]] || [[ $PiRevision == "0005" ]] || [[ $PiRevision == "0006" ]]; then
+  echo "You're running on a Pi Model B 256MB Rev 2"
+fi
+if [[ $PiRevision == "0007" ]] || [[ $PiRevision == "0008" ]] || [[ $PiRevision == "0009" ]]; then
+  echo "You're running on a Pi Model A"
+fi
+if [[ $PiRevision == "000d" ]] || [[ $PiRevision == "000e" ]] || [[ $PiRevision == "000f" ]]; then
+  echo "You're running on a Pi Model B 512MB Rev 2"
+fi
+if [[ $PiRevision == "0010" ]] || [[ $PiRevision == "0013" ]] || [[ $PiRevision == "900032" ]]; then
+  echo "You're running on a Pi Model B+"
 fi
 if [[ $PiRevision == "0012" ]] || [[ $PiRevision == "0015" ]]; then
   echo "You're running on a Pi Model A+"
